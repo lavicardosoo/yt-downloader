@@ -5,12 +5,6 @@ Um aplicativo simples para baixar vídeos do YouTube feito em **Python** utiliza
 
 ---
 
-## 📸 Demonstração
-
-*(Adicione aqui um print ou gif mostrando o app funcionando!)*
-
----
-
 ## 📦 Tecnologias e Bibliotecas
 
 - **Python 3.x**
@@ -40,7 +34,7 @@ python nome_do_seu_arquivo.py
 ```
 
 3. Cole o link do vídeo do YouTube no campo indicado.
-4. Escolha o diretório de destino.
+4. Escolha o formato(obs:essa opcção é fundamental para o funcionamento da aplicação)
 5. Clique no botão para fazer o download!
 6. Espere o vídeo baixar e aproveite 🎉
 
