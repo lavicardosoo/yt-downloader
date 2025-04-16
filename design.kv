@@ -1,0 +1,92 @@
+
+<AghataNunes>:
+
+        
+    canvas.before:
+        Rectangle:
+            source:'images/backkground.png'
+            size: self.size
+            pos:self.pos
+
+    BoxLayout:
+        orientation: 'horizontal'
+
+        BoxLayout:
+            Button:
+                text:'nothing'
+                opacity: 0
+
+        BoxLayout:
+
+            padding: 30
+            orientation: 'vertical'
+            FloatLayout:
+
+                size_hint: (1,0.2)
+                orientation: 'vertical'
+                Label:
+                    pos_hint: {"x": 0, "y": 0.1}
+                    text: 'Oiir, cole seu link aquir'
+                    font_name: 'Sarajevo.ttf'
+                    color: (0,0,0)
+                    font_size: 22
+                    halign: 'left'
+                    size_hint_x:0.6
+
+                TextInput:
+                    hint_text: "Digite algo..."
+                    pos_hint: {"x": 0, "y": 0.1}
+                    id: linkDoVideo
+                    size_hint: (1,0.3)
+
+            FloatLayout:
+                size_hint: (1,0.2)
+                orientation: 'vertical'
+                Label:
+                    size_hint_x:0.6
+                    pos_hint: {"x": 0, "y": 0.3}
+                    font_name: 'Sarajevo.ttf'
+                    text: 'Qual o formato, veyr?'
+                    halign: 'left'
+                    color: (0,0,0)
+                    font_size: 22
+
+                BoxLayout:
+                    pos_hint: {"x": 0, "y": 0.3}
+                    size_hint: (0.5,0.25)
+                    orientation: 'horizontal'
+                    spacing: 10
+                    Button:
+                        background_color: (0.99,0.15,0.17,1)
+                        font_name: 'Sarajevo.ttf'
+                        on_release: app.getMP3()
+                        text: 'mp3'
+
+                    Button:
+                        background_color: (0.99,0.15,0.17,1)
+                        font_name: 'Sarajevo.ttf'
+                        on_release: app.getMP4()
+                        text: 'mp4'
+
+
+            FloatLayout:
+                size_hint: (1,0.2)
+                orientation: 'vertical'
+
+                Label:
+                    font_name: 'Sarajevo.ttf'
+                    pos_hint: {"x": 0, "y": 0.3}
+                    halign: 'left'
+                    size_hint_x:0.8
+                    text: 'clique aqui embaixo para iniciar o download!'
+                    font_size: 15
+                    color: (2.19,2.19,2.19,0.8)
+                Button:
+                    background_color: (2.08,0.49,0.51,1)
+                    font_name: 'Sarajevo.ttf'
+                    pos_hint: {"x": 0, "y": 0.3}
+                    size_hint: (1,0.3)
+                    text: 'DOWNLOAD'
+                    on_release: app.baixarVideo()
+
+            
